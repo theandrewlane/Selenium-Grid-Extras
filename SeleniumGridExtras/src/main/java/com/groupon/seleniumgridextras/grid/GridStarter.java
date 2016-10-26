@@ -210,7 +210,7 @@ public class GridStarter {
     String classPath = getWebdriverVersion(config).startsWith("3.") ? "org.openqa.grid.selenium.GridLauncherV3" : "org.openqa.grid.selenium.GridLauncher";
     command.add(classPath);
     command.add("-role");
-    command.add("node");
+    command.add("webdriver");
     
     if (RuntimeConfig.getHostIp() != null && RuntimeConfig.getOS().getHostName() == null) {
       command.add("-host");
